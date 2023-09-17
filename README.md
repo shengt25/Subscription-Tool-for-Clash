@@ -76,7 +76,3 @@ P.S.
 
 1. 使用curl库将订阅文件下载到本地，提取其中的 **proxies / proxy-groups / rules** 的内容，添加到队列中。
 2. 读取自定义yaml模版文件，将所有内容逐行读取，并写入新的yaml文件......直到遇见 **proxies, proxy-groups和rules** 这三个条目，追加写入 **proxies / proxy-groups / rules** 队列内容，至对应条目已有内容之后。
-
-P.S.  
-自定义yaml模版文件不会被修改/覆盖，以保证下次使用；  
-添加位置在已有的自定义内容之后（这样保证自定义内容的优先级高于订阅内容）。
